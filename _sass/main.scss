@@ -1,3 +1,110 @@
-.current {
-  color: green;
+//Common stylings for all pages
+
+// Intro Sections
+// This styles all intro paragraphs that exist on all pages
+.intro{
+  position: relative;
+  padding: 6em 0 9em 0;
+
+  .title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    font-size: 0.9em;
+    width: 25em;
+    height: 3.25em;
+    top: -3.25em;
+    line-height: 3.25em;
+    margin-bottom: -3.25em;
+    margin-left: -12.5em;
+    padding-top: 0.5em;
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -38px;
+      left: -35px;
+      width: 35px;
+      height: 38px;
+      background: url('images/shadow.png');
+    }
+
+    &:after {
+      // @include vendor('transform', 'scaleX(-1)');
+      content: '';
+      position: absolute;
+      bottom: -38px;
+      right: -35px;
+      width: 35px;
+      height: 38px;
+      background: url('images/shadow.png');
+    }
+  }
+}
+
+// Footer
+// This styles the footer at the bottom of all pages.
+footer{
+
+}
+
+// Navigation Bar
+// This styles the navigation bar at the top of all pages
+.navbar{
+
+}
+
+// Current Page in Navbar
+.current{
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Stylings for homepage
+
+// About Section
+// This styles the about section on homepage
+.about{
+
+}
+
+// Contact Section
+// This styles the contact section on homepage
+.contact{
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Stylings for projects page (and subpages)
+
+//Project Catgegories
+.projectnav{
+
+}
+
+.projects{
+
+}
+
+.project-gallery{
+
+}
+
+.project-tile{
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Stylings for blog page (and subpages)
+.post-section{
+
+}
+
+.post{
+
 }

@@ -38,8 +38,11 @@ footer{
   background-color: gray;
 }
 
-// Intro Sections
-// This styles all intro paragraphs that exist on all pages
+////////////////////////////////////////////////////////////////////////////////
+//Stylings for homepage
+
+// Intro Section
+// This styles intro paragraphs on homepage
 .intro{
   display: flex;
   justify-content: center;
@@ -49,9 +52,6 @@ footer{
   text-align: center;
   background-color: LightSlateGrey;
 }
-
-////////////////////////////////////////////////////////////////////////////////
-//Stylings for homepage
 
 // About Section
 // This styles the about section on homepage
@@ -95,18 +95,80 @@ footer{
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-//Stylings for projects page (and subpages)
-
-//Project Catgegories
-.projectnav{
-
-}
+//Stylings for projects page
 
 .projects{
+  position: relative;
+  padding: 0 0 6em 0;
+  background-color: LightSlateGrey;
+
+  .intro{
+    position: relative;
+    text-align: center;
+    display: block;
+    height: 10px;
+  }
+
+  .projectnav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li{
+      display: inline;
+      margin: 20px;
+    }
+
+  }
+}
+
+.project-button{
+  background: white;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.35em;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  height: 4em;
+
+  &:hover {
+    background-color: peru;
+  }
 
 }
 
 .project-gallery{
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  padding: 6em 0 9em 0;
+  background-color: peru;
+
+  .title {
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    font-size: 0.9em;
+    width: 25em;
+    height: 3.25em;
+    top: -3.25em;
+    line-height: 3.25em;
+    margin-bottom: -3.25em;
+    margin-left: -12.5em;
+    padding-top: 0.5em;
+
+    background: peru url('../images/section-tab.svg');
+    color: black;
+  }
 
 }
 
@@ -115,11 +177,21 @@ footer{
 }
 
 ////////////////////////////////////////////////////////////////////////////////
-//Stylings for blog page (and subpages)
+//Stylings for individual project pages
+//Project Catgegories
+.project-navbar{
+
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Stylings for blog page
 .post-section{
 
 }
 
+
+////////////////////////////////////////////////////////////////////////////////
+//Stylings for individual post
 .post{
 
 }

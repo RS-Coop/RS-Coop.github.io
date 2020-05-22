@@ -1,28 +1,33 @@
 ---
 layout: default
+permalink: "/projects/"
 title: Projects
 ---
 <!-- Intro -->
-<section id="intro" class="">
-  <div class="">
-    <header class="">
-      <h1>Projects</h1>
-    </header>
-    <div class="">
-      <p>Here you can find all of my projects.<br/>
-        They are categorized by research, class, and personal.<br/>
-        You can also find new and noteworthy projects below.
-      </p>
-    </div>
+<section id="intro" class="projects">
+  <div class="intro">
+    <h1>Projects</h1>
+    <p>Here you can find all of my projects.<br/>
+      They are categorized by research, class, and personal.<br/>
+      You can also find new and noteworthy projects below.
+    </p>
   </div>
+
+  <!-- Project Categories -->
+  <div class="projectnav">
+    <ul>
+      <li><button type="button" class="project-button" onclick="location.href='research';">Research Projects</button></li>
+      <li><button type="button" class="project-button" onclick="location.href='class';">Class Projects</button></li>
+      <li><button type="button" class="project-button" onclick="location.href='perosnal';">Personal Projects</button></li>
+    </ul>
 </section>
 
-<!-- Project Categories -->
-
 <!-- Project Gallery -->
-!-- One -->
   <section id="project-gallery" class="project-gallery">
-    <article calss="project-tile">
+    <div class="title">
+      New & Noteworthy
+    </div>
+    <article class="project-tile">
       <span>
         <img src="" alt="" />
       </span>
@@ -36,7 +41,7 @@ title: Projects
         <img src="" alt="" />
       </span>
       <header>
-        <h3><a href="">NN4mc</a></h3>
+        <h3><a href="">NN4MC</a></h3>
         <p>Neural Networks for Microcontrollers</p>
       </header>
     </article>

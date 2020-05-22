@@ -43,4 +43,4 @@ exclude:
   - CNAME
   - README.md
 
-# include:
+include: ['_pages']

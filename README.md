@@ -12,10 +12,10 @@ Ruby was installed according to their documentation -- for Ubuntu/Debian in this
 There were a few differences between the Jekyll and GitHub guides specifically regarding initializing the repository with Jekyll. In the end it seemed like following the Jekyll instructions worked best noting that the `github-pages` gem is installed when bundle update is run.
 
 ### References
-*[Github Guide](https://help.github.com/en/github/working-with-github-pages)
+* [Github Guide](https://help.github.com/en/github/working-with-github-pages)
 
-*[Jekyll Quickstart](https://jekyllrb.com/docs/)
+* [Jekyll Quickstart](https://jekyllrb.com/docs/)
 
-*[Jekyll GitHub Pages](https://jekyllrb.com/docs/github-pages/)
+* [Jekyll GitHub Pages](https://jekyllrb.com/docs/github-pages/)
 
-*[Beginner Guide Blog Post](http://jmcglone.com/guides/github-pages/)
+* [Beginner Guide Blog Post](http://jmcglone.com/guides/github-pages/)

@@ -1,14 +1,70 @@
 //Common stylings for all pages
 
+// Header
+// This style the header at top of all pages
+header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li{
+    display: inline;
+    margin: 20px;
+
+    a{
+      color: black;
+      text-decoration: underline;
+    }
+  }
+
+  .current{
+    color: peru;
+  }
+
+
+}
+
+body{
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
+// Footer
+// This styles the footer at the bottom of all pages.
+footer{
+  background-color: gray;
+}
+
 // Intro Sections
 // This styles all intro paragraphs that exist on all pages
 .intro{
+  display: flex;
+  justify-content: center;
+
   position: relative;
   padding: 6em 0 9em 0;
+  text-align: center;
+  background-color: LightSlateGrey;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+//Stylings for homepage
+
+// About Section
+// This styles the about section on homepage
+.about{
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  padding: 6em 0 9em 0;
+  background-color: peru;
 
   .title {
     position: absolute;
-    top: 0;
     left: 50%;
     text-align: center;
     text-transform: uppercase;
@@ -24,58 +80,17 @@
     margin-left: -12.5em;
     padding-top: 0.5em;
 
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: -38px;
-      left: -35px;
-      width: 35px;
-      height: 38px;
-      background: url('images/shadow.png');
-    }
-
-    &:after {
-      // @include vendor('transform', 'scaleX(-1)');
-      content: '';
-      position: absolute;
-      bottom: -38px;
-      right: -35px;
-      width: 35px;
-      height: 38px;
-      background: url('images/shadow.png');
-    }
+    background: peru url('../images/section-tab.svg');
+    color: black;
   }
-}
-
-// Footer
-// This styles the footer at the bottom of all pages.
-footer{
-
-}
-
-// Navigation Bar
-// This styles the navigation bar at the top of all pages
-.navbar{
-
-}
-
-// Current Page in Navbar
-.current{
-
-}
-
-////////////////////////////////////////////////////////////////////////////////
-//Stylings for homepage
-
-// About Section
-// This styles the about section on homepage
-.about{
 
 }
 
 // Contact Section
 // This styles the contact section on homepage
 .contact{
+  display: flex;
+  justify-content: center;
 
 }
 

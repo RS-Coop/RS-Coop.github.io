@@ -17,15 +17,28 @@ plugins:
 name: Cooper Simpson
 markdown: kramdown
 
-#Not currently being used
-# include:
-#   - _pages
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+# - scope:
+#     path: _pages
+#     type: projects
+#   values:
+#     layout: project
+
+
 collections_dir: collections
 
 collections:
   research_projects:
+    permalink: /:collection/:name
   class_projects:
+    permalink: /:collection/:name
   personal_projects:
+    permalink: /:collection/:name
 
 exclude:
   - .sass-cache/

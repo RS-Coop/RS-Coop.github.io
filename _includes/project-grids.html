@@ -1,0 +1,24 @@
+<div id="{{ include.type | default: 'default'}}" class="project-grid">
+  {% if include.type=='default' %}
+    {% assign projects=site.projects | where: "noteworthy", "true" %}
+  {% else %}
+    {% assign projects=site.projects | where: "type", include.type %}
+  {% endif %}
+
+  {% for item in projects %}
+    <div class="project-tile">
+      <div class="tile-inner">
+        <div class="tile-front">
+          <img src="{{ item.image }}" alt="Project Image" />
+          <h3>{{ item.name }}</h3>
+        </div>
+        <div class="tile-back">
+          <p>{{ item.summary }}</p>
+          <a href="{{ item.url }}">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -16,9 +16,10 @@ title: Projects
   <!-- Project Categories -->
   <div class="projectnav">
     <ul>
-      <li><button type="button" class="project-button" onclick="location.href='research';">Research Projects</button></li>
-      <li><button type="button" class="project-button" onclick="location.href='class';">Class Projects</button></li>
-      <li><button type="button" class="project-button" onclick="location.href='personal';">Personal Projects</button></li>
+      <li><button id="default" type="button" class="project-button" onclick="toggleCards()">New and Noteworthy</button></li>
+      <li><button id="research" type="button" class="project-button" onclick="toggleCards()">Research Projects</button></li>
+      <li><button id="class" type="button" class="project-button" onclick="toggleCards()">Class Projects</button></li>
+      <li><button id="personal" type="button" class="project-button" onclick="toggleCards()">Personal Projects</button></li>
     </ul>
 </section>
 
@@ -28,33 +29,6 @@ title: Projects
       New & Noteworthy
     </div>
 
-    <div class="project-grid">
-      <div class="project-tile">
-        <div class="tile-inner">
-          <div class="tile-front">
-            <img src="" alt="" />
-            <h3>REU</h3>
-          </div>
-          <div class="tile-back">
-            <p>Blah Blah Blah...<br/>
-              Read More
-            </p>
-          </div>
-        </div>
-      </div>
+    {% include project-grids.html type="default" %}
 
-      <div class="project-tile">
-        <div class="tile-inner">
-          <div class="tile-front">
-            <img src="" alt="" />
-            <h3>NN4MC</h3>
-          </div>
-          <div class="tile-back">
-            <p>Blah Blah Blah...<br/>
-              Read More
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>

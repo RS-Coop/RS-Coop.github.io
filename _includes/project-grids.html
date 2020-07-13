@@ -1,4 +1,4 @@
-<div id="{{ include.type | default: 'default'}}" class="project-grid">
+<div id="{{ include.type | default: 'default'}}-grid" class="project-grid" style="display: {{ include.display | default: 'none'}};">
   {% if include.type=='default' %}
     {% assign projects=site.projects | where: "noteworthy", "true" %}
   {% else %}

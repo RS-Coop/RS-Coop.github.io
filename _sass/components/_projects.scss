@@ -47,10 +47,15 @@
     border-color: LightSlateGray;
     cursor: pointer;
     height: 4em;
+    outline: none;
 
     &:hover {
       border-color: peru;
     }
+  }
+
+  .current-project{
+    border-color: peru;
   }
 }
 
@@ -135,8 +140,3 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 //Stylings for individual project pages
-
-//Project Catgegories
-.project-navbar{
-
-}

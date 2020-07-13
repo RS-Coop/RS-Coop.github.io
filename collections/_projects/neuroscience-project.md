@@ -1,6 +1,6 @@
 ---
 name: Forced Locomotion
-type: class
+type: Class
 summary: Blah Blah Blah
 noteworthy: true
 ---

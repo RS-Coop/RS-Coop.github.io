@@ -1,6 +1,6 @@
 ---
 name: Neural Networks for Microcontrollers
-type: research
+type: Research
 summary: Blah Blah Blah
 noteworthy: true
 ---

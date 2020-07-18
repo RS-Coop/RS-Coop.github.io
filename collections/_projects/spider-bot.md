@@ -1,7 +1,7 @@
 ---
 name: Spider Bot Build
-type: Personal
+category: Personal
 summary: Blah Blah Blah
-noteworthy: false
+permalink: projects/personal/spider-bot-build
 ---
 This is a personal project

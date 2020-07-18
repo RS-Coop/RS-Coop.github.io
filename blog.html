@@ -3,13 +3,28 @@ layout: default
 permalink: "/blog/"
 title: Blog
 ---
-<h1>Latest Posts</h1>
+<!-- Intro -->
+<section id="intro" class="blog">
+  <div class="intro-projects">
+    <h1>Blog</h1>
+    <p>This is my blog.<br/>
+      It has a bunch of random stuff.
+    </p>
+  </div>
+</section>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+<!-- Project List -->
+<section id="blog-posts" class="blog-posts"
+  <div id="gallery-title" class="title">
+    Latest Posts
+  </div>
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        {{ post.excerpt }}
+      </li>
+    {% endfor %}
+  </ul>
+</section>

@@ -19,23 +19,27 @@ markdown: kramdown
 
 defaults:
 - scope:
-    path: _posts
-    type: posts
+    path: ""
+    type: "posts"
   values:
-    layout: post
-# - scope:
-#     path: _pages
-#     type: projects
-#   values:
-#     layout: project
+    layout: "post"
+    featured: false
+- scope:
+    path: ""
+    type: "projects"
+  values:
+    layout: "project"
+    noteworthy: false
 
 
 collections_dir: collections
 
 collections:
   projects:
-    # permalink: /:type/:name
     output: true
+    #If Jekyll ever makes it possible to access front matter from
+    #here then this should be /projects/:category/:name
+    # permalink: /projects/:slug
 
 exclude:
   - .sass-cache/

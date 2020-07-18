@@ -2,7 +2,7 @@
   {% if include.type=='default' %}
     {% assign projects=site.projects | where: "noteworthy", "true" %}
   {% else %}
-    {% assign projects=site.projects | where: "type", include.type %}
+    {% assign projects=site.projects | where: "category", include.type %}
   {% endif %}
 
   {% for item in projects %}

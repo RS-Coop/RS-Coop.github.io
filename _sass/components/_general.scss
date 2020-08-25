@@ -76,6 +76,70 @@ h1, h2, h3, h4, h5, h6{
   // background-position: center;
 }
 
+.section-tab{
+  position: relative;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 26px;
+  // background: var(--color);
+
+  &:before{
+    z-index: 1;
+  }
+
+  &:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid black;
+    z-index: 1;
+  }
+
+  li{
+    position: relative;
+    margin: 0 10px;
+    padding: 0 10px;
+    border: 1px solid black;
+    display: inline-block;
+    background: white;
+    color: black;
+    z-index: 2;
+    border-bottom-color: white;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    &:before, &:after{
+      position: absolute;
+      bottom: -1px;
+      width: 6px;
+      height: 6px;
+      content: " ";
+      border: 1px solid black;
+    }
+
+    &:before{
+      left: -6px;
+      border-bottom-right-radius: 6px;
+      border-width: 0 1px 1px 0;
+      box-shadow: 2px 2px 0 #FFF;
+    }
+    &:after{
+      right: -6px;
+      border-bottom-left-radius: 7px;
+      border-width: 0 0 1px 1px;
+      box-shadow: -1.2px 1.5px 0 #FFF;
+    }
+  }
+}
+
 .main-section{
   display: flex;
   justify-content: center;
@@ -84,25 +148,35 @@ h1, h2, h3, h4, h5, h6{
   padding: 6em 0 9em 0;
   background-color: var(--color);
 
-  .title {
-    position: absolute;
-    left: 50%;
-    text-align: center;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 700;
-    letter-spacing: 0.25em;
-    font-size: 0.9em;
-    width: 25em;
-    height: 3.25em;
-    top: -3.25em;
-    line-height: 3.25em;
-    margin-bottom: -3.25em;
-    margin-left: -12.5em;
-    padding-top: 0.5em;
-
-    background: var(--color) url('../images/section-tab.svg');
-    color: black;
-  }
+  // &:before{
+  //   position: absolute;
+  //   top: 0;
+  //   // left: 50%;
+  //   height: 100%;
+  //   width: 100%;
+  //   background: url('../images/section-tab.svg');
+  //   outline: 1px solid red;
+  // }
+  //
+  // .title {
+  //   position: absolute;
+  //   left: 50%;
+  //   text-align: center;
+  //   text-transform: uppercase;
+  //   display: block;
+  //   font-weight: 700;
+  //   letter-spacing: 0.25em;
+  //   font-size: 0.9em;
+  //   width: 25em;
+  //   height: 5em;
+  //   top: -5em;
+  //   line-height: 3.25em;
+  //   margin-bottom: -3.25em;
+  //   margin-left: -12.5em;
+  //   padding-top: 0.5em;
+  //
+  //   background: var(--color) url('../images/section-tab.svg');
+  //   color: white;
+  // }
 
 }

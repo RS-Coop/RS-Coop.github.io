@@ -4,27 +4,37 @@ permalink: "/blog/"
 title: Blog
 ---
 <!-- Intro -->
-<section id="intro" class="blog">
-  <div class="intro-projects">
+<section id="blog-intro" class="intro">
     <h1>Blog</h1>
     <p>This is my blog.<br/>
       It has a bunch of random stuff.
     </p>
-  </div>
 </section>
 
-<!-- Project List -->
-<section id="blog-posts" class="blog-posts"
-  <div id="gallery-title" class="title">
-    Latest Posts
+<!-- Blog Posts -->
+<section id="blog-posts" class="main-section" style="--color: peru;">
+
+  <!-- Drop down menu for posts -->
+  <div id="post-type" class="title">
+    <div id="post-type-button" class="dropdown">
+      <button id="dropwdown-menu" type="button" class="btn dropwdown-toggle" data-toggle="dropdown">
+        Featured
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Recent</a>
+    </div>
   </div>
 
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        {{ post.excerpt }}
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- All posts in type specified above -->
+  <div class="blog-gallery">
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          {{ post.excerpt }}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
 </section>

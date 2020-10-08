@@ -17,4 +17,4 @@ function toggleCards(id) {
 
     currentGrid = id;
   }
-}
+} 

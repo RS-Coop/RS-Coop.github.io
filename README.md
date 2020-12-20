@@ -2,6 +2,7 @@ This is my personal website containing my portfolio, blog, and a few other misce
 
 ## Structure
 - something
+- something else
 
 ## Development Environment
 The initial repository is setup according to the GitHub guide which can be found linked in the references below. The complexity really comes from the use of Jekyll.

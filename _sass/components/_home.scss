@@ -3,23 +3,32 @@
 
 // Contact Section
 // This styles the contact section on homepage
+.contact-header{
+  color: white;
+  background-color: #334561;
+}
+
 .contact{
+  color: white;
+  background-color: #334561;
+  padding-bottom: 2em;
+
   form{
     text-align: center;
   }
 
   input[type=text]{
-    padding: 10px;
-    margin: 10px 0;
-    border-radius:10px;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 0.5em;
     border: none;
   }
 
   textarea{
-    width:75%;
-    padding:15px;
-    border-radius:15px;
-    height:150px;
+    width: 75%;
+    padding: 1em;
+    border-radius: 1em;
+    height: 10em;
     border: none;
   }
 
@@ -29,11 +38,11 @@
 
   li{
     display: inline;
-    margin: 50px;
+    margin: 3em;
   }
 
   input[type=submit], input[type=reset]{
-    border-radius:10px;
+    border-radius: 0.5em;
     border: none;
     width: 6em;
     height: 3em;

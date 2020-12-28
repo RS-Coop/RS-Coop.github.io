@@ -8,9 +8,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 4;
 
   ul{
-    padding: 0;
+    padding: 0 0 5em 0;
   }
 
   li{
@@ -45,8 +46,8 @@
 .project-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
   grid-gap: 100px;
+  justify-items: center;
 
   .project-tile{
     background-color: transparent;
@@ -74,7 +75,7 @@
     }
 
     .tile-back{
-      background-color: dodgerblue;
+      background-color: #8BC8E0;
       color: white;
       transform: rotateY(180deg);
     }

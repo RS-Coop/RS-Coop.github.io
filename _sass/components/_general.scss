@@ -1,5 +1,12 @@
 //Common stylings for all pages
 
+//Color Pallete
+// Orange: #FFA500
+// White: #FFFFFF
+// Light Blue: #D3EAF5
+// Blue: #8BC8E0
+// Dark Blue: #334561
+
 // Header
 // This style the header at top of all pages
 header{
@@ -8,7 +15,8 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Archivo Black', sans-serif;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
 
   ul{
     padding: 0;
@@ -31,7 +39,7 @@ header{
   }
 
   .current{
-    color: peru;
+    color: orange;
   }
 
 
@@ -41,18 +49,29 @@ body{
   position: relative;
   width: 100%;
   display: block;
-  font-family: 'Judson', serif;
+  color: black;
+  font-family: 'Roboto', sans-serif;
 }
 
 //Footer
 //This styles the footer at the bottom of all pages.
 footer{
   background-color: gray;
+  display: grid;
+  background-color: #334561;
+  text-align: center;
+
+  hr{
+    width: 50%;
+    border-width: 5px;
+    background: black;
+  }
 }
 
 h1, h2, h3, h4, h5, h6{
-  color: CornflowerBlue;
- font-family: 'Archivo Black', sans-serif;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  // font-family: 'Audiowide', cursive;
 }
 
 *, *:before, *:after{
@@ -63,19 +82,31 @@ h1, h2, h3, h4, h5, h6{
 //This style the intro and main sections on the
 //home, projects, and blog pages.
 .intro{
-  justify-content: center;
-
   position: relative;
   padding: 6em 0 9em 0;
   text-align: center;
-  background-color: DarkSlateGray;
   color: black;
+  overflow: hidden;
 
-  // Background image not working yet
-  // background: url('../images/IMG_4388.JPG');
-  // background-repeat: no-repeat;
-  // background-size: auto;
-  // background-position: center;
+  h1, p{
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+    background-image: var(--image-path);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 //Section Tab
@@ -90,26 +121,35 @@ h1, h2, h3, h4, h5, h6{
   line-height: 3.0em;
   margin-bottom: -3em;
   margin-left: -12.5em;
+  z-index: 3;
 
   //Text
   text-align: center;
   color: black;
-  font-weight: bold;
   font-size: 1.5em;
   padding-bottom: 5em;
+  font-family: 'Ubuntu', sans-serif;
 
   //Box
-  background-color: var(--color);
+  background-color: white;
   border-radius: 20px;
+
+  &.contact{
+    color: white;
+    background-color: #334561;
+  }
 }
 
 .main-section{
-  display: flex;
   justify-content: center;
-
   position: relative;
-  padding: 6em 0 9em 0;
-  background-color: var(--color);
+  padding: 6em 0 3em 0;
+  background-color: white;
+  text-align: center;
+
+  &.contact{
+    background-color: #334561;
+  }
 
 }
 
@@ -119,8 +159,7 @@ h1, h2, h3, h4, h5, h6{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Archivo Black', sans-serif;
-  background-color: yellow;
+  background-color: white;
   font-size: x-large;
 
   &:hover{
@@ -128,7 +167,7 @@ h1, h2, h3, h4, h5, h6{
   }
 
   .btn-construction{
-    background-color: yellow;
+    background-color: #D3EAF5;
     
   }
 }

@@ -4,14 +4,14 @@ permalink: "/projects/"
 title: Projects
 ---
 <!-- Intro -->
-<section id="project-intro" class="intro">
+<section id="project-intro" class="intro" style="--image-path: url(../images/projects-multi-color.jpg)">
   <h1>Projects</h1>
   <p>Here you can find all of my projects.<br/>
     They are categorized by research, class, and personal.<br/>
     You can also find new and noteworthy projects below.
   </p>
 
-  <!-- Project Categories -->
+  <!-- Project Categories
   <div class="projectnav">
     <ul>
       <li><button id="default" type="button" class="project-button current-project" onclick="toggleCards(this.id)">New and Noteworthy</button></li>
@@ -19,12 +19,23 @@ title: Projects
       <li><button id="Class" type="button" class="project-button" onclick="toggleCards(this.id)">Class Projects</button></li>
       <li><button id="Personal" type="button" class="project-button" onclick="toggleCards(this.id)">Personal Projects</button></li>
     </ul>
+  </div> -->
 </section>
 
 <!-- Project Gallery -->
-  <section id="project-gallery" class="main-section" style="--color: peru;">
-    <div id="gallery-title" class="section-tab" style="--color: peru;">
+  <section id="project-gallery" class="main-section">
+    <div id="gallery-title" class="section-tab">
       New & Noteworthy
+    </div>
+
+    <!-- Project Categories -->
+    <div class="projectnav">
+      <ul>
+        <li><button id="default" type="button" class="project-button current-project" onclick="toggleCards(this.id)">New and Noteworthy</button></li>
+        <li><button id="Research" type="button" class="project-button" onclick="toggleCards(this.id)">Research Projects</button></li>
+        <li><button id="Class" type="button" class="project-button" onclick="toggleCards(this.id)">Class Projects</button></li>
+        <li><button id="Personal" type="button" class="project-button" onclick="toggleCards(this.id)">Personal Projects</button></li>
+      </ul>
     </div>
 
     {% include project-grids.html type="default" display="grid" %}

@@ -1,11 +1,6 @@
 //Common stylings for all pages
 
-//Color Pallete
-// Orange: #FFA500
-// White: #FFFFFF
-// Light Blue: #D3EAF5
-// Blue: #8BC8E0
-// Dark Blue: #334561
+@import 'globals';
 
 // Header
 // This style the header at top of all pages
@@ -28,21 +23,20 @@ header{
     margin: 50px;
 
     a{
-      color: black;
+      color: inherit;
       text-decoration: none;
       font-size: 1.5em;
 
       &:hover{
+        color: inherit;
         text-decoration: underline;
       }
     }
   }
 
   .current{
-    color: orange;
+    color: $orange;
   }
-
-
 }
 
 body{
@@ -56,15 +50,16 @@ body{
 //Footer
 //This styles the footer at the bottom of all pages.
 footer{
-  background-color: gray;
   display: grid;
-  background-color: #334561;
+  background-color: $dark-blue;
   text-align: center;
+  color: white;
+  padding-top: 1em;
 
   hr{
     width: 50%;
-    border-width: 5px;
-    background: black;
+    border-width: 3px;
+    background: $orange;
   }
 }
 
@@ -78,7 +73,7 @@ h1, h2, h3, h4, h5, h6{
   box-sizing: border-box;
 }
 
-//Intro and Section
+//Intro
 //This style the intro and main sections on the
 //home, projects, and blog pages.
 .intro{
@@ -109,8 +104,15 @@ h1, h2, h3, h4, h5, h6{
   }
 }
 
-//Section Tab
+//Main Section and Section Tab
 //This styles the rounded section tabs that stick up on the pages.
+.main-section{
+  justify-content: center;
+  position: relative;
+  padding: 3em 0 6em 0;
+  text-align: center;
+}
+
 .section-tab{
   //General
   position: absolute;
@@ -125,24 +127,43 @@ h1, h2, h3, h4, h5, h6{
 
   //Text
   text-align: center;
-  color: black;
   font-size: 1.5em;
   padding-bottom: 5em;
   font-family: 'Ubuntu', sans-serif;
 
   //Box
-  background-color: white;
   border-radius: 20px;
 }
 
-.main-section{
-  justify-content: center;
-  position: relative;
-  padding: 3em 0 6em 0;
+.section-white{
+  color: black;
   background-color: white;
-  text-align: center;
 }
 
+.section-dark-blue{
+  color: white;
+  background-color: $dark-blue;
+}
+
+.section-blue{
+  color: white;
+  background-color: $blue;
+}
+
+.section-light-blue{
+  color: black;
+  background-color: $light-blue;
+}
+
+.closed{
+  padding-bottom: 2.5em;
+}
+
+.last{
+  padding-bottom: 2em;
+}
+
+//Construction banner
 .construction{
   width: 100%;
   height: 60px;
@@ -157,7 +178,7 @@ h1, h2, h3, h4, h5, h6{
   }
 
   .btn-construction{
-    background-color: #D3EAF5;
+    background-color: $light-blue;
     
   }
 }

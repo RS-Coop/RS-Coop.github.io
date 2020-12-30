@@ -8,8 +8,7 @@
   {% for item in projects %}
     <div class="project-tile">
       <div class="tile-inner">
-        <div class="tile-front">
-          <img src="{{ item.image }}" alt="Project Image" />
+        <div class="tile-front" style="--image-path: url({{ item.image }})">
           <h3>{{ item.name }}</h3>
         </div>
         <div class="tile-back">

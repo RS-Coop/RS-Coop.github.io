@@ -1,16 +1,12 @@
 ////////////////////////////////////////////////////////////////////////////////
 //Stylings for homepage
 
+@import 'globals';
+
 // Contact Section
 // This styles the contact section on homepage
-.contact-header{
-  color: white;
-  background-color: #334561;
-}
 
 .contact{
-  color: white;
-  background-color: #334561;
   padding-bottom: 2em;
 
   form{
@@ -46,5 +42,6 @@
     border: none;
     width: 6em;
     height: 3em;
+    outline: none;
   }
 }

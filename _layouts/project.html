@@ -1,8 +1,13 @@
----
-layout: defualt
----
-<h1>{{ page.name }}</h1>
-<h2>{{ page.category }}
-<p>{{ page.summary }}</p>
+{% include head.html %}
+<body>
+    {% include header.html %}
 
-{{ content }}
+    <h1>{{ page.name }}</h1>
+    <h2>{{ page.category }}</h2>
+    <p>{{ page.summary }}</p>
+
+    {{ content }}
+
+{% include footer.html %}
+</body>
+</html>

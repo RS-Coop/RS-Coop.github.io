@@ -1,7 +1,7 @@
 title: Cooper Simpson
 email: simpson.r.cooper@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  All about Cooper Simpson, his projects, and his blog.
+  All about myself (Cooper Simpson), my projects, and my blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  RS-Coop
@@ -26,20 +26,35 @@ defaults:
     featured: false
 - scope:
     path: ""
-    type: "projects"
+    type: "research-projects"
+  values:
+    layout: "project"
+    noteworthy: false
+- scope:
+    path: ""
+    type: "class-projects"
+  values:
+    layout: "project"
+    noteworthy: false
+- scope:
+    path: ""
+    type: "personal-projects"
   values:
     layout: "project"
     noteworthy: false
 
-
 collections_dir: collections
 
 collections:
-  projects:
+  research-projects:
     output: true
-    #If Jekyll ever makes it possible to access front matter from
-    #here then this should be /projects/:category/:name
-    # permalink: /projects/:slug
+    permalink: /projects/research/:slug
+  class-projects:
+    output: true
+    permalink: /projects/class/:slug
+  personal-projects:
+    output: true
+    permalink: /projects/personal/:slug
 
 exclude:
   - .sass-cache/

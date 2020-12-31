@@ -1,9 +1,8 @@
 ---
-name: Forced Locomotion
+title: Forced Locomotion
 category: class
-summary: Blah Blah Blah
 noteworthy: true
 image: ../images/placeholder.png
-permalink: projects/class/forced-Locomotion
+summary: Blah Blah Blah
 ---
 This is a class project

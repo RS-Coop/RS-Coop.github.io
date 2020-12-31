@@ -1,31 +1,35 @@
 ////////////////////////////////////////////////////////////////////////////////
 //Stylings for main projects page
 
-@import 'globals';
+@import 'globals'; //Import global vars (i.e. colour scheme)
 
 //Section tab buttons
-
 .project-button{
   cursor: pointer;
   height: 3em;
+  border: none;
+
   background-color: inherit;
   color: inherit;
-  border: none;
 
   &:focus{
     outline: 0 !important;
   }
 }
 
-//Grid and project cards
+//Grid and project tiles
 .project-grid{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 100px;
   justify-items: center;
 
+  //Grid sizing for tiles
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 100px;
+
+  //Individual project tiles
   .project-tile{
     background-color: transparent;
+
     width: 300px;
     height: 200px;
     perspective: 1000px;
@@ -45,6 +49,7 @@
       transform: rotateY(180deg);
     }
 
+    //Front of tiles
     .tile-front{
       color: black;
       align-items: center;
@@ -67,6 +72,7 @@
       }
     }
 
+    //Back of tiles
     .tile-back{
       background-color: white;
       color: black;
@@ -86,6 +92,16 @@
     }
 
   }
+}
+
+//For the closed project sections
+.closed{
+  padding-bottom: 2.5em;
+}
+
+//For the last project section
+.last{
+  padding-bottom: 2em;
 }
 
 ////////////////////////////////////////////////////////////////////////////////

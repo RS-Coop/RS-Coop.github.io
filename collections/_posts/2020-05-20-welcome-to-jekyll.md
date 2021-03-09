@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Centralized Documentation for Multiple Repositories"
-categories: web dev
+title:  "This Is A Test"
+categories: general
 ---
-Will talk about how to set up a single centralized documentation for multiple repositories that share a similar existence.
+Just a test, nothing important to read here... or is there?

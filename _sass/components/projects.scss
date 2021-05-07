@@ -19,6 +19,7 @@
 
 //Grid and project tiles
 .project-grid{
+  background-color: inherit;
   display: grid;
   justify-items: center;
 
@@ -28,7 +29,7 @@
 
   //Individual project tiles
   .project-tile{
-    background-color: transparent;
+    background-color: inherit;
 
     width: 300px;
     height: 200px;
@@ -36,6 +37,7 @@
     z-index: 4;
 
     .tile-inner{
+      background-color: inherit;
       position: relative;
       width: 100%;
       height: 100%;
@@ -74,7 +76,7 @@
 
     //Back of tiles
     .tile-back{
-      background-color: white;
+      background-color: inherit;
       color: black;
       transform: rotateY(180deg);
 
@@ -106,3 +108,20 @@
 
 ////////////////////////////////////////////////////////////////////////////////
 //Stylings for individual project pages
+
+.project-background{
+  margin-left: 5%;
+  margin-right: 5%;
+
+  background-color: lightgrey;
+}
+
+.project-title{
+  padding-top: 1em;
+  margin-left: 1%;
+}
+
+.project-content{
+  text-align: center;
+  padding-bottom: 1em;
+}

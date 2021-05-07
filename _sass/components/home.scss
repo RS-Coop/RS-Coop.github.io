@@ -2,8 +2,18 @@
 
 @import 'globals'; //Import global vars (i.e. colour scheme)
 
-// Contact Section
-// This styles the contact section on homepage
+//About Me section
+//This styles the about me area on the homepage
+.about-me{
+  p{
+    margin-right: auto;
+    margin-left: auto;
+    width: 75%;
+  }
+}
+
+//Contact Section
+//This styles the contact section on homepage
 .contact{
   padding-bottom: 2em;
 

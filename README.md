@@ -1,9 +1,5 @@
 This is my personal website containing my portfolio, blog, and a few other miscellaneous things. There is probably no reason for anyone to read this unless they are interested in how it was made. In that case (and for personal reference) there are details below on how it was set up.
 
-## Structure
-- something
-- something else
-
 ## Development Environment
 The initial repository is setup according to the GitHub guide which can be found linked in the references below. The complexity really comes from the use of Jekyll.
 

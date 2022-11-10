@@ -32,12 +32,6 @@ defaults:
     noteworthy: false
 - scope:
     path: ""
-    type: "class-projects"
-  values:
-    layout: "project"
-    noteworthy: false
-- scope:
-    path: ""
     type: "personal-projects"
   values:
     layout: "project"
@@ -49,9 +43,6 @@ collections:
   research-projects:
     output: true
     permalink: /projects/research/:slug
-  class-projects:
-    output: true
-    permalink: /projects/class/:slug
   personal-projects:
     output: true
     permalink: /projects/personal/:slug

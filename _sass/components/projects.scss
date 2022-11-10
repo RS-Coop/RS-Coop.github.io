@@ -3,20 +3,6 @@
 
 @import 'globals'; //Import global vars (i.e. colour scheme)
 
-//Section tab buttons
-.project-button{
-  cursor: pointer;
-  height: 3em;
-  border: none;
-
-  background-color: inherit;
-  color: inherit;
-
-  &:focus{
-    outline: 0 !important;
-  }
-}
-
 //Grid and project tiles
 .project-grid{
   background-color: inherit;

@@ -1,14 +1,31 @@
 //Main javascript file
-var currentGrid = "default"
+var currentSelection = "default"
 
-function toggleCards(id){
-  if (id != currentGrid){
-    document.getElementById(currentGrid+"-tab").classList.add("closed");
-    document.getElementById(id+"-tab").classList.remove("closed");
+function showProjects(){
+  document.getElementById("project-options").classList.toggle("show");
+}
 
-    document.getElementById(currentGrid+"-grid").style.display = "none";
-    document.getElementById(id+"-grid").style.display = "grid";
+function toggleProjects(selection){
+  if (selection != currentSelection){
+    console.log(selection)
+    document.getElementById("project-button").innerHTML = document.getElementById(selection).innerHTML
 
-    currentGrid = id;
+    document.getElementById(selection).classList.toggle("hidden");
+    document.getElementById(currentSelection).classList.toggle("hidden");
+
+    currentSelection = selection;
   }
-} 
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.tab-button')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

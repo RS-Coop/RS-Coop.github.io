@@ -5,51 +5,19 @@
 //About Me section
 //This styles the about me area on the homepage
 .about-me{
+  display: grid;
+  padding: 2em;
+  grid-template-columns: 300px 1fr;
+  gap: 1em;
+  align-items: center;
+  max-width: 75%;
+  margin: 0 auto;
+
+  img{
+    border-radius: 50%;
+  }
+
   p{
-    margin-right: auto;
-    margin-left: auto;
-    width: 75%;
-  }
-}
-
-//Contact Section
-//This styles the contact section on homepage
-.contact{
-  padding-bottom: 2em;
-
-  form{
-    text-align: center;
-  }
-
-  input[type=text]{
-    padding: 0.5em;
-    margin: 0.5em;
-    border-radius: 0.5em;
-    border: none;
-  }
-
-  textarea{
-    width: 75%;
-    padding: 1em;
-    border-radius: 1em;
-    height: 10em;
-    border: none;
-  }
-
-  ul{
-    padding: 0;
-  }
-
-  li{
-    display: inline;
-    margin: 3em;
-  }
-
-  input[type=submit], input[type=reset]{
-    border-radius: 0.5em;
-    border: none;
-    width: 6em;
-    height: 3em;
-    outline: none;
+    text-align: left;
   }
 }

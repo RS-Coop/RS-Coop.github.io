@@ -4,38 +4,22 @@ permalink: "/projects/"
 title: Projects
 ---
 <!-- Intro -->
-<section id="project-intro" class="intro" style="--image-path: url(../images/projects-multi-color.jpg)">
+<section id="project-intro" class="intro">
   <h1>Projects</h1>
   <p>Here you can find all of my projects.</p>
 </section>
 
 <!-- Project Gallery -->
-<section id="default-tab" class="main-section section-white">
-  <div class="section-tab section-white">
-    <button id="default" type="button" class="project-button" onclick="toggleCards(this.id)">New and Noteworthy</button>
+<section id="project-tab" class="main-section section-white">
+  <div class="section-tab section-white dropdown">
+    <button id="project-button" type="button" class="tab-button" onclick="showProjects()">New and Noteworthy</button>
+    <div id="project-options" class="dropdown-content">
+        <button id="default" class="hidden" onclick="toggleProjects(this.id)">New and Noteworthy</button>
+        <button id="research" onclick="toggleProjects(this.id)">Research Projects</button>
+        <button id="personal" onclick="toggleProjects(this.id)">Personal Projects</button>
+    </div>
   </div>
-  {% include project-grids.html type="default" display="grid" %}
+  <span id="projects">
+    {% include project-grids.html type="default" display="grid" %}
+  </span>
 </section>
-
-<section id="research-tab" class="main-section section-dark-blue closed">
-  <div class="section-tab section-dark-blue">
-    <button id="research" type="button" class="project-button" onclick="toggleCards(this.id)">Research Projects</button>
-  </div>
-  {% include project-grids.html type="research" display="none" %}
-</section>
-
-<section id="class-tab" class="main-section section-blue closed">
-  <div class="section-tab section-blue">
-    <button id="class" type="button" class="project-button" onclick="toggleCards(this.id)">Class Projects</button>
-  </div>
-  {% include project-grids.html type="class" display="none" %}
-</section>
-
-<section id="personal-tab" class="main-section section-light-blue closed last">
-  <div class="section-tab section-light-blue">
-    <button id="personal" type="button" class="project-button" onclick="toggleCards(this.id)">Personal Projects</button>
-  </div>
-  {% include project-grids.html type="personal" display="none" %}
-</section>
-
-

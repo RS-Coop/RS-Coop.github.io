@@ -5,7 +5,7 @@ The initial repository is setup according to the GitHub guide which can be found
 
 Ruby was installed according to their documentation -- for Ubuntu/Debian in this case. A gem install directory was created and added to my path in /.bashrc according to Jekylls documentation. Jekyll was then initialized in my web repo and the Gemfile was edited appropriately for GitHub pages as it explains.
 
-`bundle update` should be run often to update any gem dependencies (I think), and `bundle exec jekyll serve` can be used to test everything locally.
+`bundle update` should be run often to update any gem dependencies (I think), and `bundle exec jekyll serve` can be used to test everything locally. Also `bundle update --bundler` will update itself.
 
 There were a few differences between the Jekyll and GitHub guides specifically regarding initializing the repository with Jekyll. In the end it seemed like following the Jekyll instructions worked best noting that the `github-pages` gem is installed when bundle update is run.
 

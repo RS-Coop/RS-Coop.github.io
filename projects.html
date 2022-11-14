@@ -5,20 +5,19 @@ title: Projects
 ---
 <!-- Intro -->
 <section id="project-intro" class="intro">
-  <h1>Projects</h1>
-  <p>Here you can find all of my projects.</p>
+  <h2>Research Papers<br>Software Repos<br>Random Other Things<br>&nbsp</h2>
+  <div class="section-tab section-white dropdown">
+    <button id="project-button" type="button" class="tab-button" onclick="showProjects()">New and Noteworthy</button>
+    <div id="project-options" class="dropdown-content">
+        <button id="default" class="tab-button hidden" onclick="toggleProjects(this.id)">New and Noteworthy</button>
+        <button id="research" class="tab-button" onclick="toggleProjects(this.id)">Research Projects</button>
+        <button id="personal" class="tab-button" onclick="toggleProjects(this.id)">Personal Projects</button>
+    </div>
+  </div>
 </section>
 
 <!-- Project Gallery -->
 <section id="project-tab" class="main-section section-white">
-  <div class="section-tab section-white dropdown">
-    <button id="project-button" type="button" class="tab-button" onclick="showProjects()">New and Noteworthy</button>
-    <div id="project-options" class="dropdown-content">
-        <button id="default" class="hidden" onclick="toggleProjects(this.id)">New and Noteworthy</button>
-        <button id="research" onclick="toggleProjects(this.id)">Research Projects</button>
-        <button id="personal" onclick="toggleProjects(this.id)">Personal Projects</button>
-    </div>
-  </div>
   <span id="projects">
     {% include project-grids.html type="default" display="grid" %}
   </span>

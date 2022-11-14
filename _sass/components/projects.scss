@@ -35,6 +35,7 @@
 
     &:hover .tile-inner{
       transform: rotateY(180deg);
+      cursor: pointer;
     }
 
     //Front of tiles
@@ -98,16 +99,29 @@
 .project-background{
   margin-left: 5%;
   margin-right: 5%;
-
-  background-color: lightgrey;
 }
 
 .project-title{
-  padding-top: 1em;
-  margin-left: 1%;
+
+  ul{
+    padding: 0 0 0 0;
+
+    li{
+      display: block;
+
+      a{
+        color: $orange;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .project-content{
-  text-align: center;
-  padding-bottom: 1em;
+  text-align: left;
+  padding: 2em 0 2em 0;
+
+  object{
+    width: 100%;
+  }
 }

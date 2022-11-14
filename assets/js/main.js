@@ -1,11 +1,11 @@
 //Main javascript file
 var currentSelection = "default"
 
-function showProjects(){
+function showProjects() {
   document.getElementById("project-options").classList.toggle("show");
 }
 
-function toggleProjects(selection){
+function toggleProjects(selection) {
   if (selection != currentSelection){
     console.log(selection)
     document.getElementById("project-button").innerHTML = document.getElementById(selection).innerHTML
@@ -15,6 +15,10 @@ function toggleProjects(selection){
 
     currentSelection = selection;
   }
+}
+
+function redirect(target) {
+  location.href = target;
 }
 
 window.onclick = function(event) {

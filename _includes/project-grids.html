@@ -23,11 +23,9 @@
         <div class="tile-front" style="--image-path: url({{ item.image }})">
           <h3>{{ item.title }}</h3>
         </div>
-        <div class="tile-back">
+        <div class="tile-back" onclick="redirect('{{ item.url }}')">
           <p>{{ item.summary }}</p>
-          <a href="{{ item.url }}">
-            Read More
-          </a>
+          <a>Read more...</a>
         </div>
       </div>
     </div>

@@ -1,7 +1,8 @@
 ---
 title: Neural Networks for Microcontrollers
 category: research
-noteworthy: true
+type: Conference Paper
+noteworthy: false
 image: ../images/placeholder.png
 summary: Blah Blah Blah
 ---

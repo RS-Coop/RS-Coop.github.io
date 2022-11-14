@@ -5,19 +5,38 @@
 //About Me section
 //This styles the about me area on the homepage
 .about-me{
-  display: grid;
-  padding: 2em;
-  grid-template-columns: 300px 1fr;
-  gap: 1em;
-  align-items: center;
+  padding: 0;
   max-width: 75%;
   margin: 0 auto;
 
   img{
+    float: left;
+    margin: 0 2em 0 0;
     border-radius: 50%;
   }
 
   p{
     text-align: left;
+  }
+
+  ul{
+    padding: 2em 0 0 0;
+    margin: 0;
+
+    li{
+      display: inline-block;
+      margin: 0 2em 0 2em;
+
+      a{
+        color: inherit;
+        text-decoration: none;
+        font-size: 1.5em;
+
+        &:hover{
+          color: $orange;
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }

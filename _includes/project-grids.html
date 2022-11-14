@@ -18,12 +18,12 @@
   {% endcase %}
 
   {% for item in projects %}
-    <div class="project-tile">
+    <div class="project-tile" onclick="redirect('{{ item.url }}')">
       <div class="tile-inner">
         <div class="tile-front" style="--image-path: url({{ item.image }})">
           <h3>{{ item.title }}</h3>
         </div>
-        <div class="tile-back" onclick="redirect('{{ item.url }}')">
+        <div class="tile-back">
           <p>{{ item.summary }}</p>
           <a>Read more...</a>
         </div>

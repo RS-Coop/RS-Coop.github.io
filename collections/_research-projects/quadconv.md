@@ -1,7 +1,7 @@
 ---
 title: Quadrature Convolutions (QuadConv)
 category: research
-type: Pre-Print
+type: Journal Publication
 noteworthy: true
 image: ../images/placeholder.png
 pdf: https://arxiv.org/pdf/2211.05151.pdf

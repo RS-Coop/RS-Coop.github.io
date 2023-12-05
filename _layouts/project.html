@@ -14,7 +14,9 @@
       <div class="project-content">
         {{ content }}
         {% if page.pdf %}
-          <object data="{{ page.pdf }}" width="1000" height="1000" type='application/pdf'></object>
+          {% for pdf in page.pdf %}
+            <object data="{{ pdf }}" width="1000" height="1000" type='application/pdf'></object>
+          {% endfor %}
         {% endif %}
       </div>
     </div>

@@ -1,0 +1,33 @@
+//Stylings for blog page and posts
+
+@import 'globals'; //Import global vars (i.e. colour scheme)
+
+//Stylings for main blog page
+.post-type-button{
+
+}
+
+//Stylings for individual posts
+.blog-gallery{
+  text-align: left;
+
+  ul{
+    list-style-type: none;
+
+    li{
+      padding-bottom: 1em;
+    }
+
+    li:last-child{
+      padding-bottom: 0;
+    }
+
+    ul{
+      // padding-left: 1em;
+
+      li{
+        display: inline-block;
+      }
+    }
+  }
+}

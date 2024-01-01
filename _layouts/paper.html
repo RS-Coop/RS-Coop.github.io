@@ -1,0 +1,55 @@
+{% include head.html %}
+<body>
+    {% include header.html %}
+    <section id="home-intro" class="intro">
+      <div class="paper-title">
+        <h2>{{ page.title }}</h2>
+        <ul>
+          <li>
+              {{ page.authors }}
+          </li>
+          <li>
+              ({{ page.year }}).
+          </li>
+          <li>
+              {{ page.type }}
+          </li>
+      </ul>
+    </section>
+
+    <div class="paper-content">
+
+      <div class="paper-links">
+        <ul>
+          <li>
+            <a href="{{ page.pdf }}">
+                <button class="paper-link-button">PDF</button>
+            </a>
+          </li>
+          {% if page.arxiv %}
+            <li>
+              <a href="{{ page.arxiv }}">
+                <button class="paper-link-button">arXiv</button>
+              </a>
+            </li>
+          {% endif %}
+          {% if page.code %}
+            <li>
+              <a href="{{ page.code }}">
+                <button class="paper-link-button">Code</button>
+              </a>
+            </li>
+          {% endif %}
+          <li>
+            {% include citation.html %}
+          </li>
+        </ul>
+      </div>
+
+      {{ content }}
+
+    </div>
+
+{% include footer.html %}
+</body>
+</html>

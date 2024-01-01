@@ -1,12 +1,13 @@
-{% if site.data.release == False %}
+{% if site.data.release == false %}
   {% include construction.html %}
 {% endif %}
 <header>
   <nav id="nav-main">
     <ul>
-    {% for item in site.data.navigation %}
-      <li {% if page.url == item.link %}class="current"{% endif %}><a href="{{ item.link }}">{{ item.name }}</a></li>
-    {% endfor %}
+      <li>Cooper Simpson</li>
+      {% for item in site.data.navigation %}
+        <li {% if page.url == item.link %}class="current"{% endif %}><a href="{{ item.link }}">{{ item.name }}</a></li>
+      {% endfor %}
     </ul>
   </nav>
 </header>

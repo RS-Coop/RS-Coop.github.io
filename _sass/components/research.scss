@@ -1,10 +1,55 @@
-////////////////////////////////////////////////////////////////////////////////
-//Stylings for main projects page
+//Stylings for research page
 
 @import 'globals'; //Import global vars (i.e. colour scheme)
 
+.research{
+  width: 80%;
+  max-width: 80em;
+  margin: auto;
+
+  h2{
+    text-align: left;
+    padding-bottom: 0.5em;
+  }
+
+  p{
+    font-size: larger;
+    text-align: left;
+  }
+}
+
+.paper-list{
+  text-align: left;
+
+  ul{
+    list-style-type: none;
+
+    li{
+      padding-bottom: 1em;
+    }
+
+    li:last-child{
+      padding-bottom: 0;
+    }
+
+    ul{
+
+      li{
+        display: inline-block;
+      }
+    }
+  }
+  
+  a{
+    &:hover{
+      color: $orange;
+      text-decoration: underline;
+    }
+  }
+}
+
 //Grid and project tiles
-.project-grid{
+.software-grid{
   background-color: inherit;
   display: grid;
   justify-items: center;
@@ -40,7 +85,6 @@
 
     //Front of tiles
     .tile-front{
-      color: black;
       align-items: center;
       justify-content: center;
       display: flex;
@@ -63,12 +107,13 @@
 
     //Back of tiles
     .tile-back{
-      background-color: inherit;
-      color: black;
+      background-color: $dark-blue;
+      color: white;
       transform: rotateY(180deg);
 
       a{
-        color: $orange;
+        color: $blue;
+        text-decoration: underline;
       }
     }
 
@@ -96,32 +141,65 @@
 ////////////////////////////////////////////////////////////////////////////////
 //Stylings for individual project pages
 
-.project-background{
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-.project-title{
-
+.paper-title{
   ul{
-    padding: 0 0 0 0;
+    margin: 0;
+    padding: 0;
 
     li{
-      display: block;
+      padding: 0;
+      display: inline-block;
+    }
+  }
+}
+
+.paper-content{
+  width: 80%;
+  max-width: 80em;
+  margin: auto;
+
+  h2{
+    text-align: left;
+    padding-bottom: 0.5em;
+  }
+
+  p{
+    font-size: larger;
+    text-align: left;
+  }
+}
+
+.paper-links{
+  text-align: center;
+
+  ul{
+    padding-top: 2em;
+
+    li{
+      display: inline-block;
+      margin-inline: 0.5em;
 
       a{
-        color: $orange;
-        text-decoration: underline;
+        color: inherit;
+    
+        &:hover{
+          color: $orange;
+          text-decoration: underline;
+        }
       }
     }
   }
 }
 
-.project-content{
-  text-align: left;
-  padding: 2em 0 2em 0;
+.paper-link-button{
+  border-radius: 25px;
+  border-color: $dark-blue;
+  background-color: $dark-blue;
+  color: white;
 
-  object{
-    width: 100%;
+  font-size: 1.5em;
+
+  &:hover{
+    background-color: $orange
   }
 }

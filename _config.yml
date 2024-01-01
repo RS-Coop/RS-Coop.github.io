@@ -20,32 +20,29 @@ markdown: kramdown
 defaults:
 - scope:
     path: ""
+    type: "papers"
+  values:
+    layout: "paper"
+- scope:
+    path: ""
+    type: "software"
+  values:
+    layout:
+- scope:
+    path: ""
     type: "posts"
   values:
     layout: "post"
-    featured: false
-- scope:
-    path: ""
-    type: "research-projects"
-  values:
-    layout: "project"
-    noteworthy: false
-- scope:
-    path: ""
-    type: "personal-projects"
-  values:
-    layout: "project"
-    noteworthy: false
 
 collections_dir: collections
 
 collections:
-  research-projects:
+  papers:
     output: true
-    permalink: /projects/research/:slug
-  personal-projects:
+    permalink: /research/papers/:slug
+  software:
     output: true
-    permalink: /projects/personal/:slug
+    permalink: /research/software/:slug
 
 exclude:
   - .sass-cache/

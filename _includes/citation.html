@@ -1,0 +1,24 @@
+<button type="button" class="paper-link-button" data-toggle="modal" data-target="#citation">
+  Cite
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="citation" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Citation</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {{ page.citation }}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Copy</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

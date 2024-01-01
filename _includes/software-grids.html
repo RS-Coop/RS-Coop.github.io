@@ -1,0 +1,15 @@
+<div class="software-grid" >
+  {% for item in site.software reversed %}
+    <div class="project-tile" onclick="redirect('{{ item.code }}')">
+      <div class="tile-inner">
+        <div class="tile-front" style="--image-path: url({{ item.image }})">
+          <h3>{{ item.title }}</h3>
+        </div>
+        <div class="tile-back">
+          <p>{{ item.summary }}</p>
+          <a>GitHub</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
